@@ -1,5 +1,8 @@
+package restassuredbasics;
+
 import io.restassured.RestAssured;
 import io.restassured.path.json.JsonPath;
+import reusablemethods.*;
 
 import static io.restassured.RestAssured.given;
 
@@ -22,8 +25,8 @@ public class GetPlace {
                 + "  \"website\": \"http://google.com\",\r\n"
                 + "  \"language\": \"French-IN\"\r\n"
                 + "}";
-        String resourceAddURI = "/maps/api/place/add/json";
-        String resourceGetURI = "/maps/api/place/get/json";
+        final String resourceAddURI = "/maps/api/place/add/json";
+        final String resourceGetURI = "/maps/api/place/get/json";
 
         //Pre-requisite - Set up the baseURI
         RestAssured.baseURI = "https://rahulshettyacademy.com";
@@ -42,7 +45,7 @@ public class GetPlace {
 
         //Parsing the response using JsonPath class
 
-        JsonPath js = new JsonPath(responseAdd);
+        JsonPath js = ReusableMethods.rawToJson(responseAdd);
         String placeId = js.get("place_id"); //Extracting the place id from the JSON response body
         //System.out.println(placeId);
 
@@ -54,9 +57,9 @@ public class GetPlace {
 
                 .then().log().all().assertThat().statusCode(200).extract().response().asString();
 
-        JsonPath js1 = new JsonPath(responseGet);
+        JsonPath js1 = ReusableMethods.rawToJson(responseGet);
         String address = js1.get("address");
-        //System.out.println(address);
+        System.out.println(address);
 
     }
 }

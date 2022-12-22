@@ -4,10 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0f25812f-3273-4d4c-91d6-d358d5541bc5" name="Changes" comment="Adding the AssertionBasics file">
-      <change afterPath="$PROJECT_DIR$/src/main/java/GetPlace.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/UpdatePlace.java" afterDir="false" />
+    <list default="true" id="0f25812f-3273-4d4c-91d6-d358d5541bc5" name="Changes" comment="Adding the GetPlace and UpdatePlace classes">
+      <change afterPath="$PROJECT_DIR$/src/main/java/complexjsonparsing/ComplexJsonParse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/complexjsonparsing/SumValidation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/reusablemethods/Payloads.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/reusablemethods/ReusableMethods.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/AddPlace.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/restassuredbasics/AddPlace.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/AssertionBasics.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/restassuredbasics/AssertionBasics.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/GetPlace.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/restassuredbasics/GetPlace.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/UpdatePlace.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/restassuredbasics/UpdatePlace.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,7 +45,7 @@
     </option>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/src/main/java/AddPlace.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/restassuredbasics/AddPlace.java" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -73,30 +80,67 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.UpdatePlace">
+  <component name="RunManager" selected="TestNG.SumValidation.sumOfCourses">
     <configuration name="AssertionBasics" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="AssertionBasics" />
+      <option name="MAIN_CLASS_NAME" value="restassuredbasics.AssertionBasics" />
       <module name="RestAssuredPracticeProject" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="GetPlace" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="GetPlace" />
+      <option name="MAIN_CLASS_NAME" value="restassuredbasics.GetPlace" />
       <module name="RestAssuredPracticeProject" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="UpdatePlace" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="UpdatePlace" />
+      <option name="MAIN_CLASS_NAME" value="restassuredbasics.UpdatePlace" />
       <module name="RestAssuredPracticeProject" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SumValidation" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="RestAssuredPracticeProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="complexjsonparsing.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="complexjsonparsing" />
+      <option name="MAIN_CLASS_NAME" value="complexjsonparsing.SumValidation" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SumValidation.sumOfCourses" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="RestAssuredPracticeProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="complexjsonparsing.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="complexjsonparsing" />
+      <option name="MAIN_CLASS_NAME" value="complexjsonparsing.SumValidation" />
+      <option name="METHOD_NAME" value="sumOfCourses" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.SumValidation.sumOfCourses" />
+        <item itemvalue="TestNG.SumValidation" />
         <item itemvalue="Application.UpdatePlace" />
         <item itemvalue="Application.GetPlace" />
         <item itemvalue="Application.AssertionBasics" />
@@ -119,11 +163,19 @@
       <option name="project" value="LOCAL" />
       <updated>1671647723848</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Adding the GetPlace and UpdatePlace classes">
+      <created>1671723633003</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1671723633003</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Adding the AssertionBasics file" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding the AssertionBasics file" />
+    <MESSAGE value="Adding the GetPlace and UpdatePlace classes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding the GetPlace and UpdatePlace classes" />
   </component>
 </project>

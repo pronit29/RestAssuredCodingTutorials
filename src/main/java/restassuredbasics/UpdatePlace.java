@@ -1,6 +1,12 @@
+package restassuredbasics;
+
 import io.restassured.RestAssured;
 import io.restassured.path.json.JsonPath;
+import reusablemethods.*;
+
 import static org.hamcrest.Matchers.*;
+
+import org.testng.Assert;
 
 import static io.restassured.RestAssured.given;
 
@@ -24,9 +30,10 @@ public class UpdatePlace {
                 + "  \"language\": \"French-IN\"\r\n"
                 + "}";
 
-        String resourceAddURI = "/maps/api/place/add/json";
-        String resourceGetURI = "/maps/api/place/get/json";
-        String resourceUpdateURI = "/maps/api/place/update/json";
+        String newAddress = "70 Summer walk, USA";
+        final String resourceAddURI = "/maps/api/place/add/json";
+        final String resourceGetURI = "/maps/api/place/get/json";
+        final String resourceUpdateURI = "/maps/api/place/update/json";
 
         //Pre-requisite - Set up the baseURI
         RestAssured.baseURI = "https://rahulshettyacademy.com";
@@ -45,7 +52,7 @@ public class UpdatePlace {
         //Parsing the response for Add Place using JsonPath class
 
 
-        JsonPath js = new JsonPath(responseAdd);
+        JsonPath js = ReusableMethods.rawToJson(responseAdd);
         String placeId = js.get("place_id"); //Extracting the place id from the JSON response body
 
         //Get the place details using the GET method
@@ -61,14 +68,14 @@ public class UpdatePlace {
 
         //Parsing the response for Get Place using JsonPath class
 
-        JsonPath js1 = new JsonPath(responseGet);
+        JsonPath js1 = ReusableMethods.rawToJson(responseGet);
         String address = js1.get("address"); // Extracting the address from the JSON response body
 
         //Given
-        String responseUpdate = given().log().all().queryParam("key", "qaclick123").header("Content-Type", "application/json")
+        given().log().all().queryParam("key", "qaclick123").header("Content-Type", "application/json")
                 .body("{\r\n"
                         + "\"place_id\":\""+placeId+"\",\r\n"
-                        + "\"address\":\"70 Summer walk, USA\",\r\n"
+                        + "\"address\":\""+newAddress+"\",\r\n"
                         + "\"key\":\"qaclick123\"\r\n"
                         + "}\r\n"
                         + "")
@@ -78,25 +85,26 @@ public class UpdatePlace {
 
                 //Then
                 .then().assertThat().statusCode(200)
-                .body("msg", equalTo("Address successfully updated")).extract().response().asString();
-
-        //System.out.println(responseUpdate);
-
-        JsonPath js2 = new JsonPath(responseUpdate);
-        String message = js2.get("msg"); //Extracting the msg from the response body
-        System.out.println(message);
+                .body("msg", equalTo("Address successfully updated"));
 
         //Get the details of the updated Address
 
         //Given
-        given().log().all().queryParam("key", "qaclick123").queryParam("place_id", placeId)
+        String getResponse = given().log().all().queryParam("key", "qaclick123").queryParam("place_id", placeId)
 
                 //When
                 .when().get(resourceGetURI)
 
                 //Then
-                .then().log().all().assertThat().statusCode(200)
-                .body("address", equalTo("70 Summer walk, USA"));
+                .then().assertThat().statusCode(200).extract().response().asString();
+
+        JsonPath js2 = ReusableMethods.rawToJson(getResponse);
+        String actualAddress = js2.get("address"); //Extracting the msg from the response body
+        System.out.println(actualAddress);
+
+        // Now we are using the TestNG assertions to validate the address change
+
+        Assert.assertEquals(actualAddress, newAddress);
 
 
     }
