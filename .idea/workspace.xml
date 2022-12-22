@@ -4,14 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0f25812f-3273-4d4c-91d6-d358d5541bc5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/AssertionBasics.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="0f25812f-3273-4d4c-91d6-d358d5541bc5" name="Changes" comment="Adding the AssertionBasics file">
+      <change afterPath="$PROJECT_DIR$/src/main/java/GetPlace.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/UpdatePlace.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/AddPlace.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/AddPlace.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +23,19 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="fe049d4c-03a5-44b2-860c-3612071946d2" />
+        <option name="url" value="https://github.com/pronit29/RestAssuredCodingTutorials.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/src/main/java/AddPlace.java" root0="FORCE_HIGHLIGHTING" />
@@ -64,7 +73,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.UpdatePlace">
     <configuration name="AssertionBasics" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="AssertionBasics" />
       <module name="RestAssuredPracticeProject" />
@@ -72,8 +81,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="GetPlace" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="GetPlace" />
+      <module name="RestAssuredPracticeProject" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UpdatePlace" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="UpdatePlace" />
+      <module name="RestAssuredPracticeProject" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.UpdatePlace" />
+        <item itemvalue="Application.GetPlace" />
         <item itemvalue="Application.AssertionBasics" />
       </list>
     </recent_temporary>
@@ -87,6 +112,18 @@
       <option name="presentableId" value="Default" />
       <updated>1671548363114</updated>
     </task>
+    <task id="LOCAL-00001" summary="Adding the AssertionBasics file">
+      <created>1671647723848</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1671647723848</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Adding the AssertionBasics file" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding the AssertionBasics file" />
   </component>
 </project>
