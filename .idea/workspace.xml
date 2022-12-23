@@ -4,17 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0f25812f-3273-4d4c-91d6-d358d5541bc5" name="Changes" comment="Adding the GetPlace and UpdatePlace classes">
-      <change afterPath="$PROJECT_DIR$/src/main/java/complexjsonparsing/ComplexJsonParse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/complexjsonparsing/SumValidation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/reusablemethods/Payloads.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/reusablemethods/ReusableMethods.java" afterDir="false" />
+    <list default="true" id="0f25812f-3273-4d4c-91d6-d358d5541bc5" name="Changes" comment="Added new complex json parsing scenarios">
+      <change afterPath="$PROJECT_DIR$/src/main/java/LibraryAPI/DynamicJson.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/LibraryAPI/DynamicJsonUsingJsonFile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/AddPlace.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/AddPlace.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/restassuredbasics/AddPlace.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/AssertionBasics.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/restassuredbasics/AssertionBasics.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/GetPlace.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/restassuredbasics/GetPlace.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/UpdatePlace.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/restassuredbasics/UpdatePlace.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/reusablemethods/Payloads.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/reusablemethods/Payloads.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/reusablemethods/ReusableMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/reusablemethods/ReusableMethods.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,24 +76,52 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.SumValidation.sumOfCourses">
-    <configuration name="AssertionBasics" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="restassuredbasics.AssertionBasics" />
+  <component name="RunManager" selected="Application.DynamicJsonUsingJsonFile">
+    <configuration name="DynamicJsonUsingJsonFile" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="LibraryAPI.DynamicJsonUsingJsonFile" />
       <module name="RestAssuredPracticeProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="LibraryAPI.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GetPlace" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="restassuredbasics.GetPlace" />
+    <configuration name="DynamicJson.addBook (1)" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="RestAssuredPracticeProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="LibraryAPI.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="LibraryAPI" />
+      <option name="MAIN_CLASS_NAME" value="LibraryAPI.DynamicJson" />
+      <option name="METHOD_NAME" value="addBook" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UpdatePlace" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="restassuredbasics.UpdatePlace" />
+    <configuration name="DynamicJson.addBook" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="RestAssuredPracticeProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="LibraryAPI.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="LibraryAPI" />
+      <option name="MAIN_CLASS_NAME" value="LibraryAPI.DynamicJson" />
+      <option name="METHOD_NAME" value="addBook" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -139,11 +163,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.DynamicJsonUsingJsonFile" />
+        <item itemvalue="TestNG.DynamicJson.addBook (1)" />
+        <item itemvalue="TestNG.DynamicJson.addBook" />
         <item itemvalue="TestNG.SumValidation.sumOfCourses" />
         <item itemvalue="TestNG.SumValidation" />
-        <item itemvalue="Application.UpdatePlace" />
-        <item itemvalue="Application.GetPlace" />
-        <item itemvalue="Application.AssertionBasics" />
       </list>
     </recent_temporary>
   </component>
@@ -170,12 +194,20 @@
       <option name="project" value="LOCAL" />
       <updated>1671723633003</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Added new complex json parsing scenarios">
+      <created>1671738984033</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1671738984034</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Adding the AssertionBasics file" />
     <MESSAGE value="Adding the GetPlace and UpdatePlace classes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding the GetPlace and UpdatePlace classes" />
+    <MESSAGE value="Added new complex json parsing scenarios" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added new complex json parsing scenarios" />
   </component>
 </project>
