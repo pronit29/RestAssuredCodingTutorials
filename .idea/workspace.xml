@@ -4,12 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0f25812f-3273-4d4c-91d6-d358d5541bc5" name="Changes" comment="Added new complex json parsing scenarios">
-      <change afterPath="$PROJECT_DIR$/src/main/java/LibraryAPI/DynamicJson.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/LibraryAPI/DynamicJsonUsingJsonFile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/AddPlace.json" afterDir="false" />
+    <list default="true" id="0f25812f-3273-4d4c-91d6-d358d5541bc5" name="Changes" comment="Adding new class files dealing with dynamic json payloads">
+      <change afterPath="$PROJECT_DIR$/src/main/java/JiraAPI/AddAttachment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/JiraAPI/AddComment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/JIRA.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/reusablemethods/Payloads.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/reusablemethods/Payloads.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/reusablemethods/ReusableMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/reusablemethods/ReusableMethods.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -27,11 +26,11 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;
   }
-}]]></component>
+}</component>
   <component name="GithubPullRequestsUISettings">
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
@@ -59,24 +58,50 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/Users/Pronit Kundu/IdeaProjects/RestAssuredPracticeProject/src",
-    "project.structure.last.edited": "SDKs",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.3873563",
-    "settings.editor.selected.configurable": "preferences.sourceCode.Java"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Pronit Kundu/IdeaProjects/RestAssuredPracticeProject/src&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.3873563&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.sourceCode.Java&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.DynamicJsonUsingJsonFile">
+  <component name="RunManager" selected="Application.AddAttachment">
+    <configuration name="AddAttachment" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="JiraAPI.AddAttachment" />
+      <module name="RestAssuredPracticeProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="JiraAPI.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AddComment" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="JiraAPI.AddComment" />
+      <module name="RestAssuredPracticeProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="JiraAPI.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="DynamicJsonUsingJsonFile" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="LibraryAPI.DynamicJsonUsingJsonFile" />
       <module name="RestAssuredPracticeProject" />
@@ -126,48 +151,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SumValidation" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="RestAssuredPracticeProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="complexjsonparsing.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="complexjsonparsing" />
-      <option name="MAIN_CLASS_NAME" value="complexjsonparsing.SumValidation" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SumValidation.sumOfCourses" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="RestAssuredPracticeProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="complexjsonparsing.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="complexjsonparsing" />
-      <option name="MAIN_CLASS_NAME" value="complexjsonparsing.SumValidation" />
-      <option name="METHOD_NAME" value="sumOfCourses" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.AddAttachment" />
+        <item itemvalue="Application.AddComment" />
         <item itemvalue="Application.DynamicJsonUsingJsonFile" />
         <item itemvalue="TestNG.DynamicJson.addBook (1)" />
         <item itemvalue="TestNG.DynamicJson.addBook" />
-        <item itemvalue="TestNG.SumValidation.sumOfCourses" />
-        <item itemvalue="TestNG.SumValidation" />
       </list>
     </recent_temporary>
   </component>
@@ -201,13 +191,21 @@
       <option name="project" value="LOCAL" />
       <updated>1671738984034</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Adding new class files dealing with dynamic json payloads">
+      <created>1671823623721</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1671823623722</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Adding the AssertionBasics file" />
     <MESSAGE value="Adding the GetPlace and UpdatePlace classes" />
     <MESSAGE value="Added new complex json parsing scenarios" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added new complex json parsing scenarios" />
+    <MESSAGE value="Adding new class files dealing with dynamic json payloads" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding new class files dealing with dynamic json payloads" />
   </component>
 </project>
