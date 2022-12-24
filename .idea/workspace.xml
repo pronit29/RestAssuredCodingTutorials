@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0f25812f-3273-4d4c-91d6-d358d5541bc5" name="Changes" comment="Adding new class files dealing with dynamic json payloads">
-      <change afterPath="$PROJECT_DIR$/src/main/java/JiraAPI/AddAttachment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/JiraAPI/AddComment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/JIRA.txt" afterDir="false" />
+    <list default="true" id="0f25812f-3273-4d4c-91d6-d358d5541bc5" name="Changes" comment="Adding in class for attaching documents to the JIRA API tests">
+      <change afterPath="$PROJECT_DIR$/src/main/java/JiraAPI/GetIssue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/JiraAPI/ValidateAddedComments.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/reusablemethods/ReusableMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/reusablemethods/ReusableMethods.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +73,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.AddAttachment">
+  <component name="RunManager" selected="Application.ValidateAddedComments">
     <configuration name="AddAttachment" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="JiraAPI.AddAttachment" />
       <module name="RestAssuredPracticeProject" />
@@ -115,49 +113,39 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DynamicJson.addBook (1)" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="GetIssue" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="JiraAPI.GetIssue" />
       <module name="RestAssuredPracticeProject" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="LibraryAPI.*" />
+          <option name="PATTERN" value="JiraAPI.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="LibraryAPI" />
-      <option name="MAIN_CLASS_NAME" value="LibraryAPI.DynamicJson" />
-      <option name="METHOD_NAME" value="addBook" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DynamicJson.addBook" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="ValidateAddedComments" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="JiraAPI.ValidateAddedComments" />
       <module name="RestAssuredPracticeProject" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="LibraryAPI.*" />
+          <option name="PATTERN" value="JiraAPI.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="LibraryAPI" />
-      <option name="MAIN_CLASS_NAME" value="LibraryAPI.DynamicJson" />
-      <option name="METHOD_NAME" value="addBook" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ValidateAddedComments" />
+        <item itemvalue="Application.GetIssue" />
         <item itemvalue="Application.AddAttachment" />
         <item itemvalue="Application.AddComment" />
         <item itemvalue="Application.DynamicJsonUsingJsonFile" />
-        <item itemvalue="TestNG.DynamicJson.addBook (1)" />
-        <item itemvalue="TestNG.DynamicJson.addBook" />
       </list>
     </recent_temporary>
   </component>
@@ -198,7 +186,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671823623722</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Adding in class for attaching documents to the JIRA API tests">
+      <created>1671901245447</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1671901245447</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -206,6 +201,7 @@
     <MESSAGE value="Adding the GetPlace and UpdatePlace classes" />
     <MESSAGE value="Added new complex json parsing scenarios" />
     <MESSAGE value="Adding new class files dealing with dynamic json payloads" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding new class files dealing with dynamic json payloads" />
+    <MESSAGE value="Adding in class for attaching documents to the JIRA API tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding in class for attaching documents to the JIRA API tests" />
   </component>
 </project>
