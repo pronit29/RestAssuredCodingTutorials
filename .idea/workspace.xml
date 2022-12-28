@@ -4,10 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0f25812f-3273-4d4c-91d6-d358d5541bc5" name="Changes" comment="Adding new Get Issue and Comment Validation Files">
-      <change afterPath="$PROJECT_DIR$/src/main/java/OAuth2/OAuthTest.java" afterDir="false" />
+    <list default="true" id="0f25812f-3273-4d4c-91d6-d358d5541bc5" name="Changes" comment="OAuth 2.0 Rest Assured Scenario">
+      <change afterPath="$PROJECT_DIR$/src/main/java/POJOClasses/APIPojo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/POJOClasses/CoursesPojo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/POJOClasses/GetCourse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/POJOClasses/MobilePojo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/POJOClasses/WebAutomationPojo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/OAuth2/OAuthTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/OAuth2/OAuthTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,8 +66,8 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/Users/Pronit Kundu/IdeaProjects/RestAssuredPracticeProject/src",
-    "project.structure.last.edited": "Modules",
+    "last_opened_file_path": "C:/Users/Pronit Kundu/.m2/repository/jackson-databind-2.14.1.jar",
+    "project.structure.last.edited": "Libraries",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.3873563",
     "settings.editor.selected.configurable": "preferences.pluginManager"
@@ -200,7 +205,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671913665238</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="OAuth 2.0 Rest Assured Scenario">
+      <created>1672081973719</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1672081973719</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -210,6 +222,7 @@
     <MESSAGE value="Adding new class files dealing with dynamic json payloads" />
     <MESSAGE value="Adding in class for attaching documents to the JIRA API tests" />
     <MESSAGE value="Adding new Get Issue and Comment Validation Files" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding new Get Issue and Comment Validation Files" />
+    <MESSAGE value="OAuth 2.0 Rest Assured Scenario" />
+    <option name="LAST_COMMIT_MESSAGE" value="OAuth 2.0 Rest Assured Scenario" />
   </component>
 </project>
