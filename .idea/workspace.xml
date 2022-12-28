@@ -4,15 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0f25812f-3273-4d4c-91d6-d358d5541bc5" name="Changes" comment="OAuth 2.0 Rest Assured Scenario">
-      <change afterPath="$PROJECT_DIR$/src/main/java/POJOClasses/APIPojo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/POJOClasses/CoursesPojo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/POJOClasses/GetCourse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/POJOClasses/MobilePojo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/POJOClasses/WebAutomationPojo.java" afterDir="false" />
+    <list default="true" id="0f25812f-3273-4d4c-91d6-d358d5541bc5" name="Changes" comment="Adding POJO Class scenarios">
+      <change afterPath="$PROJECT_DIR$/src/main/java/SerializeTest/GMapSerializeTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/SerializeTestsPOJO/GMapsSerialize.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/SerializeTestsPOJO/LocationPOJO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/OAuth2/OAuthTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/OAuth2/OAuthTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +52,9 @@
     </option>
   </component>
   <component name="ProjectId" id="2JBPAIp3dcEPQGH8pRlOLwh4dmN" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -78,13 +76,13 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.OAuthTest">
-    <configuration name="AddAttachment" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="JiraAPI.AddAttachment" />
+  <component name="RunManager" selected="Application.GMapSerializeTest">
+    <configuration name="AddPlace" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="restassuredbasics.AddPlace" />
       <module name="RestAssuredPracticeProject" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="JiraAPI.*" />
+          <option name="PATTERN" value="restassuredbasics.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -92,12 +90,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AddComment" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="JiraAPI.AddComment" />
+    <configuration name="GMapSerializeTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="SerializeTest.GMapSerializeTest" />
       <module name="RestAssuredPracticeProject" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="JiraAPI.*" />
+          <option name="PATTERN" value="SerializeTest.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -146,11 +144,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.GMapSerializeTest" />
+        <item itemvalue="Application.AddPlace" />
         <item itemvalue="Application.OAuthTest" />
         <item itemvalue="Application.ValidateAddedComments" />
         <item itemvalue="Application.GetIssue" />
-        <item itemvalue="Application.AddAttachment" />
-        <item itemvalue="Application.AddComment" />
       </list>
     </recent_temporary>
   </component>
@@ -212,7 +210,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672081973719</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Adding POJO Class scenarios">
+      <created>1672252090168</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1672252090169</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -223,6 +228,7 @@
     <MESSAGE value="Adding in class for attaching documents to the JIRA API tests" />
     <MESSAGE value="Adding new Get Issue and Comment Validation Files" />
     <MESSAGE value="OAuth 2.0 Rest Assured Scenario" />
-    <option name="LAST_COMMIT_MESSAGE" value="OAuth 2.0 Rest Assured Scenario" />
+    <MESSAGE value="Adding POJO Class scenarios" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding POJO Class scenarios" />
   </component>
 </project>
