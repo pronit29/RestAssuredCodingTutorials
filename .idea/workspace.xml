@@ -4,11 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0f25812f-3273-4d4c-91d6-d358d5541bc5" name="Changes" comment="Adding POJO Class scenarios">
-      <change afterPath="$PROJECT_DIR$/src/main/java/SerializeTest/GMapSerializeTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/SerializeTestsPOJO/GMapsSerialize.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/SerializeTestsPOJO/LocationPOJO.java" afterDir="false" />
+    <list default="true" id="0f25812f-3273-4d4c-91d6-d358d5541bc5" name="Changes" comment="Serialization Cases">
+      <change afterPath="$PROJECT_DIR$/src/main/java/ECommercePOJO/CreateOrderPOJO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ECommercePOJO/LoginPOJO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ECommercePOJO/OrdersPOJO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/EcommerceAPI/EcommerceCreateOrderAPI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/EcommerceAPI/EcommerceCreateProductAPI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/EcommerceAPI/EcommerceDeleteOrderAPI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/EcommerceAPI/EcommerceDeleteProductAPI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/EcommerceAPI/EcommerceLoginAPI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/EcommerceAPI/EcommerceViewOrderAPI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/EcommerceAPI/LoginDetails.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/SpecBuilderTests/SpecBuilderTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/LoginCredentials.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/images.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/SerializeTest/GMapSerializeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SerializeTest/GMapSerializeTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,17 +84,62 @@
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Pronit Kundu\IdeaProjects\RestAssuredPracticeProject\src\main\resources" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="EcommerceAPI" />
+    </key>
   </component>
-  <component name="RunManager" selected="Application.GMapSerializeTest">
-    <configuration name="AddPlace" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="restassuredbasics.AddPlace" />
+  <component name="RunManager" selected="Application.EcommerceDeleteProductAPI">
+    <configuration name="EcommerceCreateOrderAPI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="EcommerceAPI.EcommerceCreateOrderAPI" />
       <module name="RestAssuredPracticeProject" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="restassuredbasics.*" />
+          <option name="PATTERN" value="EcommerceAPI.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EcommerceDeleteOrderAPI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="EcommerceAPI.EcommerceDeleteOrderAPI" />
+      <module name="RestAssuredPracticeProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="EcommerceAPI.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EcommerceDeleteProductAPI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="EcommerceAPI.EcommerceDeleteProductAPI" />
+      <module name="RestAssuredPracticeProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="EcommerceAPI.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EcommerceViewOrderAPI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="EcommerceAPI.EcommerceViewOrderAPI" />
+      <module name="RestAssuredPracticeProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="EcommerceAPI.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -103,52 +160,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GetIssue" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="JiraAPI.GetIssue" />
-      <module name="RestAssuredPracticeProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="JiraAPI.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="OAuthTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="OAuth2.OAuthTest" />
-      <module name="RestAssuredPracticeProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="OAuth2.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ValidateAddedComments" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="JiraAPI.ValidateAddedComments" />
-      <module name="RestAssuredPracticeProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="JiraAPI.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.EcommerceDeleteProductAPI" />
+        <item itemvalue="Application.EcommerceDeleteOrderAPI" />
+        <item itemvalue="Application.EcommerceViewOrderAPI" />
+        <item itemvalue="Application.EcommerceCreateOrderAPI" />
         <item itemvalue="Application.GMapSerializeTest" />
-        <item itemvalue="Application.AddPlace" />
-        <item itemvalue="Application.OAuthTest" />
-        <item itemvalue="Application.ValidateAddedComments" />
-        <item itemvalue="Application.GetIssue" />
       </list>
     </recent_temporary>
   </component>
@@ -217,7 +235,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672252090169</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Serialization Cases">
+      <created>1672258968515</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1672258968516</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -229,6 +254,7 @@
     <MESSAGE value="Adding new Get Issue and Comment Validation Files" />
     <MESSAGE value="OAuth 2.0 Rest Assured Scenario" />
     <MESSAGE value="Adding POJO Class scenarios" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding POJO Class scenarios" />
+    <MESSAGE value="Serialization Cases" />
+    <option name="LAST_COMMIT_MESSAGE" value="Serialization Cases" />
   </component>
 </project>

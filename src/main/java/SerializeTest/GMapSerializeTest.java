@@ -3,7 +3,6 @@ package SerializeTest;
 import SerializeTestsPOJO.GMapsSerialize;
 import SerializeTestsPOJO.LocationPOJO;
 import io.restassured.RestAssured;
-import io.restassured.response.Response;
 
 import java.util.ArrayList;
 import java.util.List;
