@@ -1,21 +1,50 @@
 package resources;
 
-import io.restassured.RestAssured;
 import io.restassured.builder.RequestSpecBuilder;
+import io.restassured.filter.log.RequestLoggingFilter;
+import io.restassured.filter.log.ResponseLoggingFilter;
 import io.restassured.http.ContentType;
 import io.restassured.specification.RequestSpecification;
 
+import java.io.*;
+import java.util.Properties;
+
 public class Utils {
 
-    RequestSpecification req;
+    public static RequestSpecification req;
+    static String filename = "src/test/java/resources/global.properties";
+    static Properties propObj = new Properties();
+    static FileInputStream file;
 
-    public RequestSpecification requestSpecification() {
-
-        RestAssured.baseURI = "https://rahulshettyacademy.com";
-        req = new RequestSpecBuilder().setBaseUri(RestAssured.baseURI)
-                .setContentType(ContentType.JSON)
-                .addQueryParam("key","qaclick123")
-                .build();
-        return req;
+    static {
+        try {
+            file = new FileInputStream(filename);
+        } catch (FileNotFoundException e) {
+            throw new RuntimeException(e);
+        }
     }
+
+    public RequestSpecification requestSpecification() throws IOException {
+
+        if(req == null) {
+            PrintStream log = new PrintStream(new FileOutputStream("logging.txt"));
+            req = new RequestSpecBuilder().setBaseUri(getGlobalValue("baseUrl"))
+                    .setContentType(ContentType.JSON)
+                    .addQueryParam("key", "qaclick123")
+                    .addFilter(RequestLoggingFilter.logRequestTo(log))
+                    .addFilter(ResponseLoggingFilter.logResponseTo(log))
+                    .build();
+            return req;
+        }
+           return req;
+    }
+
+    public static String getGlobalValue(String globalKey) throws IOException {
+        propObj.load(file);
+        String globalProperty = propObj.getProperty(globalKey);
+
+        return globalProperty;
+
+    }
+
 }

@@ -12,8 +12,12 @@ import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 import io.restassured.specification.ResponseSpecification;
 import org.junit.runner.RunWith;
+import resources.APIResources;
 import resources.TestDataBuilder;
 import resources.Utils;
+
+import java.io.FileNotFoundException;
+import java.io.IOException;
 
 import static io.restassured.RestAssured.given;
 import static org.junit.Assert.assertEquals;
@@ -25,22 +29,31 @@ public class Add_Place_Stepdefination extends Utils {
     Response response;
     RequestSpecification res;
     ResponseSpecification resspec;
-    String resourceURI = "/maps/api/place/add/json";
+    APIResources resourcesObj;
 
     TestDataBuilder dataObj = new TestDataBuilder();
 
-
-    @Given("^Add Place payload is injected$")
-    public void add_place_payload_is_injected() {
-         resspec = new ResponseSpecBuilder().expectStatusCode(200).expectContentType(ContentType.JSON).build();
-         res = given().spec(requestSpecification())
-                .body(dataObj.addPlacePayload());
+    @Given("Add Place payload is injected with {string}, {string}, {string}")
+    public void add_place_payload_is_injected_with(String name, String language, String address) throws IOException {
+        res = given().spec(requestSpecification())
+                .body(dataObj.addPlacePayload(name, language, address));
     }
-    @When("^User calls \"([^\"]*)\" Place API with \"([^\"]*)\" request$")
-    public void user_calls_something_place_api_with_something_request(String strArg1, String strArg2) {
 
-        response = res.when().post(resourceURI)
-                .then().spec(resspec).extract().response();
+    @When("^User calls \"([^\"]*)\" Place API with \"([^\"]*)\" request$")
+    public void user_calls_something_place_api_with_something_request(String resources, String httpMethods) {
+
+        resourcesObj = APIResources.valueOf(resources);
+
+        resspec = new ResponseSpecBuilder().expectStatusCode(200).expectContentType(ContentType.JSON)
+                .build();
+
+        if(httpMethods.equalsIgnoreCase("POST"))
+        response = res.when().post(resourcesObj.getResource());
+        else if(httpMethods.equalsIgnoreCase("GET"))
+            response = res.when().get(resourcesObj.getResource());
+        else if(httpMethods.equalsIgnoreCase("DELETE"))
+            response = res.when().delete(resourcesObj.getResource());
+
     }
 
     @Then("The API call got success with status code as {int}")
