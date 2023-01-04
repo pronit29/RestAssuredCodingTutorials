@@ -4,54 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0f25812f-3273-4d4c-91d6-d358d5541bc5" name="Changes" comment="Serialization Cases">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ECommercePOJO/CreateOrderPOJO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ECommercePOJO/LoginPOJO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ECommercePOJO/OrdersPOJO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/EcommerceAPI/EcommerceCreateOrderAPI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/EcommerceAPI/EcommerceCreateProductAPI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/EcommerceAPI/EcommerceDeleteOrderAPI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/EcommerceAPI/EcommerceDeleteProductAPI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/EcommerceAPI/EcommerceLoginAPI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/EcommerceAPI/EcommerceViewOrderAPI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/EcommerceAPI/LoginDetails.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/SpecBuilderTests/SpecBuilderTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/LoginCredentials.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/SerializeTest/GMapSerializeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SerializeTest/GMapSerializeTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="c47ea664-bd82-49d8-95f8-54ecbecfcc3d" name="Changes" comment="First Commnit of Cucumber Framework" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="GitHubPullRequestSearchHistory">{
-  &quot;lastFilter&quot;: {
-    &quot;state&quot;: &quot;OPEN&quot;
-  }
-}</component>
-  <component name="GithubPullRequestsUISettings">
-    <option name="selectedUrlAndAccountId">
-      <UrlAndAccount>
-        <option name="accountId" value="fe049d4c-03a5-44b2-860c-3612071946d2" />
-        <option name="url" value="https://github.com/pronit29/RestAssuredCodingTutorials.git" />
-      </UrlAndAccount>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
     </option>
-  </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/src/main/java/restassuredbasics/AddPlace.java" root0="FORCE_HIGHLIGHTING" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -63,7 +28,7 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectId" id="2JBPAIp3dcEPQGH8pRlOLwh4dmN" />
+  <component name="ProjectId" id="2JlyqjznpPq4Nk9X5IEqLjhAWZ3" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
@@ -73,188 +38,44 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/Users/Pronit Kundu/.m2/repository/jackson-databind-2.14.1.jar",
-    "project.structure.last.edited": "Libraries",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.3873563",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+    "RunOnceActivity.ShowReadmeOnStart": "true"
   }
 }]]></component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Pronit Kundu\IdeaProjects\RestAssuredPracticeProject\src\main\resources" />
-    </key>
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="EcommerceAPI" />
-    </key>
-  </component>
-  <component name="RunManager" selected="Application.EcommerceDeleteProductAPI">
-    <configuration name="EcommerceCreateOrderAPI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="EcommerceAPI.EcommerceCreateOrderAPI" />
-      <module name="RestAssuredPracticeProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="EcommerceAPI.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="EcommerceDeleteOrderAPI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="EcommerceAPI.EcommerceDeleteOrderAPI" />
-      <module name="RestAssuredPracticeProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="EcommerceAPI.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="EcommerceDeleteProductAPI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="EcommerceAPI.EcommerceDeleteProductAPI" />
-      <module name="RestAssuredPracticeProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="EcommerceAPI.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="EcommerceViewOrderAPI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="EcommerceAPI.EcommerceViewOrderAPI" />
-      <module name="RestAssuredPracticeProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="EcommerceAPI.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="GMapSerializeTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="SerializeTest.GMapSerializeTest" />
-      <module name="RestAssuredPracticeProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="SerializeTest.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Application.EcommerceDeleteProductAPI" />
-        <item itemvalue="Application.EcommerceDeleteOrderAPI" />
-        <item itemvalue="Application.EcommerceViewOrderAPI" />
-        <item itemvalue="Application.EcommerceCreateOrderAPI" />
-        <item itemvalue="Application.GMapSerializeTest" />
-      </list>
-    </recent_temporary>
-  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="0f25812f-3273-4d4c-91d6-d358d5541bc5" name="Changes" comment="" />
-      <created>1671548363114</created>
+      <changelist id="c47ea664-bd82-49d8-95f8-54ecbecfcc3d" name="Changes" comment="" />
+      <created>1672667159636</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1671548363114</updated>
+      <updated>1672667159636</updated>
     </task>
-    <task id="LOCAL-00001" summary="Adding the AssertionBasics file">
-      <created>1671647723848</created>
+    <task id="LOCAL-00001" summary="First Commnit of Cucumber Framework">
+      <created>1672667651669</created>
       <option name="number" value="00001" />
       <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
-      <updated>1671647723848</updated>
+      <updated>1672667651670</updated>
     </task>
-    <task id="LOCAL-00002" summary="Adding the GetPlace and UpdatePlace classes">
-      <created>1671723633003</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1671723633003</updated>
-    </task>
-    <task id="LOCAL-00003" summary="Added new complex json parsing scenarios">
-      <created>1671738984033</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1671738984034</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Adding new class files dealing with dynamic json payloads">
-      <created>1671823623721</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1671823623722</updated>
-    </task>
-    <task id="LOCAL-00005" summary="Adding in class for attaching documents to the JIRA API tests">
-      <created>1671901245447</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1671901245447</updated>
-    </task>
-    <task id="LOCAL-00006" summary="Adding new Get Issue and Comment Validation Files">
-      <created>1671913665237</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1671913665238</updated>
-    </task>
-    <task id="LOCAL-00007" summary="OAuth 2.0 Rest Assured Scenario">
-      <created>1672081973719</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1672081973719</updated>
-    </task>
-    <task id="LOCAL-00008" summary="Adding POJO Class scenarios">
-      <created>1672252090168</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1672252090169</updated>
-    </task>
-    <task id="LOCAL-00009" summary="Serialization Cases">
-      <created>1672258968515</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1672258968516</updated>
-    </task>
-    <option name="localTasksCounter" value="10" />
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Adding the AssertionBasics file" />
-    <MESSAGE value="Adding the GetPlace and UpdatePlace classes" />
-    <MESSAGE value="Added new complex json parsing scenarios" />
-    <MESSAGE value="Adding new class files dealing with dynamic json payloads" />
-    <MESSAGE value="Adding in class for attaching documents to the JIRA API tests" />
-    <MESSAGE value="Adding new Get Issue and Comment Validation Files" />
-    <MESSAGE value="OAuth 2.0 Rest Assured Scenario" />
-    <MESSAGE value="Adding POJO Class scenarios" />
-    <MESSAGE value="Serialization Cases" />
-    <option name="LAST_COMMIT_MESSAGE" value="Serialization Cases" />
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="First Commnit of Cucumber Framework" />
+    <option name="LAST_COMMIT_MESSAGE" value="First Commnit of Cucumber Framework" />
   </component>
 </project>
