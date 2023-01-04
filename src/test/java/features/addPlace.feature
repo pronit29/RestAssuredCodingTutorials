@@ -14,6 +14,7 @@ Feature: Validate Place API's
 
   @GetPlaceAPI
   Scenario Outline: Verify if Place is successfully added and displayed using the Get Place API
+
     Given Add Place payload is injected with "<Name>", "<Language>", "<Address>"
     When User calls "Add" Place API with "POST" request
     Then The API call got success with status code as 200
@@ -26,7 +27,8 @@ Feature: Validate Place API's
       | Shark House |   English | 30, Park Ave Street |
 
   @DeletePlaceAPI
-  Scenario Outline: Verify if Place is successfully added and displayed using the Get Place API
+  Scenario Outline: Verify if Place is successfully Deleted using the Delete Place API
+
     Given Add Place payload is injected with "<Name>", "<Language>", "<Address>"
     When User calls "Add" Place API with "POST" request
     Then The API call got success with status code as 200
@@ -41,3 +43,12 @@ Feature: Validate Place API's
     Examples:
       |     Name    |  Language |       Address       |
       | Shark House |   English | 30, Park Ave Street |
+
+#  @DeletePlaceAPIWithoutAddPlace
+#  Scenario: Verify if Place is successfully Deleted using the Delete Place API without Adding the Place
+#
+#    Given Delete Place payload is injected
+#    When User calls "Delete" Place API with "DELETE" request
+#    Then The API call got success with status code as 200
+#    And "status" in the response body is "OK"
+
