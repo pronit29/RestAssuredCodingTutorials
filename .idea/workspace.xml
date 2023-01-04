@@ -5,14 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e2e19bbc-5b00-486b-b82f-ff42019c9b18" name="Changes" comment="Adding the Cucumber Framework for the Add Places API">
-      <change afterPath="$PROJECT_DIR$/logging.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/resources/APIResources.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/resources/global.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logging.txt" beforeDir="false" afterPath="$PROJECT_DIR$/logging.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/features/addPlace.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/features/addPlace.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/resources/TestDataBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/resources/TestDataBuilder.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/resources/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/resources/Utils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinations/Add_Place_Stepdefination.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinations/Add_Place_Stepdefination.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testRunner/TestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testRunner/TestRunner.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,8 +21,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -34,6 +33,19 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="bc54d66e-6739-498b-beb4-58e1cf45ead0" />
+        <option name="url" value="git@github.com:pronit29/RestAssuredCodingTutorials.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/src/test/java/stepDefinations/Add_Place_Stepdefination.java" root0="FORCE_HIGHLIGHTING" />
@@ -118,6 +130,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Scenario: Verify if Place is successfully added and displayed using the Get Place API" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/features/addPlace.feature" />
+      <option name="GLUE" value="stepDefinations" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="AddPlaceE2EFramework" />
+      <option name="NAME_FILTER" value="^Verify if Place is successfully added and displayed using the Get Place API$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Verify if Place is successfully added and displayed using the Get Place API$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Verify if Place is successfully added and displayed using the Get Place API" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TestRunner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="AddPlaceE2EFramework" />
       <extension name="coverage">
@@ -143,15 +175,16 @@
     <list>
       <item itemvalue="Cucumber.js.runConfig" />
       <item itemvalue="Cucumber Java.RunConfig" />
+      <item itemvalue="Cucumber Java.Scenario: Verify if Place is successfully added and displayed using the Get Place API" />
       <item itemvalue="Cucumber Java.Scenario: Verify if Place is being added using Add Place API" />
       <item itemvalue="JUnit.TestRunner" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.TestRunner" />
+        <item itemvalue="Cucumber Java.Scenario: Verify if Place is successfully added and displayed using the Get Place API" />
         <item itemvalue="Cucumber Java.Scenario: Verify if Place is being added using Add Place API" />
         <item itemvalue="JUnit.TestRunner" />
-        <item itemvalue="Cucumber Java.Scenario: Verify if Place is being added using Add Place API" />
         <item itemvalue="Cucumber Java.Scenario: Verify if Place is being added using Add Place API" />
       </list>
     </recent_temporary>
@@ -169,6 +202,14 @@
       <workItem from="1672724709374" duration="1294000" />
       <workItem from="1672726463104" duration="14863000" />
     </task>
+    <task id="LOCAL-00001" summary="Adding the Enum Class and Parameterizing the codes making it more optimized">
+      <created>1672772088405</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1672772088405</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -199,5 +240,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Adding the Enum Class and Parameterizing the codes making it more optimized" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding the Enum Class and Parameterizing the codes making it more optimized" />
   </component>
 </project>

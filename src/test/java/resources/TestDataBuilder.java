@@ -32,5 +32,15 @@ public class TestDataBuilder {
         return gmapSerial;
     }
 
+    public String deletePlacePayload(String placeId) {
+
+        String place_ID = "{\n" +
+                "\"place_id\":\""+placeId+"\"\n" +
+                "}";
+        return place_ID;
+    }
+
+
+
 
 }

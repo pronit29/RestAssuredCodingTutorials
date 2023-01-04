@@ -30,6 +30,7 @@ public class Add_Place_Stepdefination extends Utils {
     RequestSpecification res;
     ResponseSpecification resspec;
     APIResources resourcesObj;
+    static String place_Id;
 
     TestDataBuilder dataObj = new TestDataBuilder();
 
@@ -47,12 +48,18 @@ public class Add_Place_Stepdefination extends Utils {
         resspec = new ResponseSpecBuilder().expectStatusCode(200).expectContentType(ContentType.JSON)
                 .build();
 
-        if(httpMethods.equalsIgnoreCase("POST"))
-        response = res.when().post(resourcesObj.getResource());
-        else if(httpMethods.equalsIgnoreCase("GET"))
+        if(httpMethods.equalsIgnoreCase("POST")) {
+             response = res.when().post(resourcesObj.getResource());
+            System.out.println("Calling the POST request");
+        }
+        else if(httpMethods.equalsIgnoreCase("GET")) {
             response = res.when().get(resourcesObj.getResource());
-        else if(httpMethods.equalsIgnoreCase("DELETE"))
+            System.out.println("Calling the GET request");
+        }
+        else if(httpMethods.equalsIgnoreCase("DELETE")) {
             response = res.when().delete(resourcesObj.getResource());
+            System.out.println("Calling the DELETE request");
+        }
 
     }
 
@@ -61,14 +68,28 @@ public class Add_Place_Stepdefination extends Utils {
         assertEquals(response.getStatusCode(),expectedStatusCode);
     }
 
-
     @And("^\"([^\"]*)\" in the response body is \"([^\"]*)\"$")
     public void something_in_the_response_body_is_something(String statusKey, String statusValue) {
 
-        String resp = response.asString();
-        System.out.println(resp);
-        JsonPath js = new JsonPath(resp);
-        System.out.println(js.get(statusKey).toString());
-        assertEquals(js.get(statusKey).toString(),statusValue);
+        assertEquals(getJsonPath(response,statusKey),statusValue);
     }
+
+    @Then("Verify that the {string} is mapped to the {string} using the {string} Place API with {string} request")
+    public void verify_that_the_is_mapped_to_the_using_the_place_api_with_request(String placeId, String expectedName, String resources, String httpMethods) throws IOException {
+        place_Id = getJsonPath(response,placeId);
+        res = given().spec(requestSpecification())
+                .queryParam("place_id",place_Id);
+        user_calls_something_place_api_with_something_request(resources,httpMethods);
+        String actualName = getJsonPath(response,"name");
+        assertEquals(expectedName,actualName);
+
+    }
+
+    @Then("Delete Place payload is injected")
+    public void delete_place_payload_is_injected() throws IOException {
+        res = given().spec(requestSpecification())
+                .body(dataObj.deletePlacePayload(place_Id));
+
+    }
+
 }
